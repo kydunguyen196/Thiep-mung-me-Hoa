@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b1230">
+<meta name="description" content="Thiệp mừng 20/10 – một đêm diễn dành tặng mẹ Hoa">
+<title>Thiệp mừng mẹ Hoa</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="stage" id="stage">
+  <div class="stars" id="stars" aria-hidden="true"></div>
+  <div class="hills" aria-hidden="true"><svg id="hillSvg" viewBox="0 0 480 120" preserveAspectRatio="none"></svg></div>
+
+  <section class="scene" id="scene2" aria-live="polite">
+    <div class="card">
+      <span class="orn a">✦</span><span class="orn b">✦</span>
+      <svg class="emblem" viewBox="0 0 100 100" aria-hidden="true"><use href="#sunSym"/></svg>
+      <div class="kicker line">Chào mừng ngày 20 · 10</div>
+      <div class="rule line">✦</div>
+      <div class="small-script line">Gửi đến</div>
+      <div class="script line">Mẹ Hoa</div>
+      <p class="em line"><span class="nb">Xin mời mẹ ghé thăm</span> <span class="nb">một đêm diễn nhỏ,</span> <span class="nb">dành riêng cho mẹ.</span></p>
+      <button class="btn line" data-next>Tiếp tục</button>
+    </div>
+  </section>
+
+  <section class="scene" id="scene3">
+    <div class="card">
+      <span class="orn a">✦</span><span class="orn b">✦</span>
+      <svg class="emblem" viewBox="0 0 100 100" aria-hidden="true"><use href="#moonSym"/></svg>
+      <div class="kicker line" style="margin-top:6px">Vở diễn mở đầu</div>
+      <div class="rule line">✦</div>
+      <h2 class="line">Từ các con<br>yêu của mẹ</h2>
+      <div class="rule line">❦</div>
+      <p class="em line"><span class="nb">Với tất cả thương yêu</span> <span class="nb">và lòng biết ơn</span> <span class="nb">chân thành nhất.</span></p>
+      <button class="btn line" data-next>Tiếp tục</button>
+    </div>
+  </section>
+
+  <!-- Màn gia đình: lia camera lần lượt từng người -->
+  <section class="scene" id="scene4" data-seq="1">
+    <div class="card" style="padding-top:24px">
+      <span class="orn a">✦</span><span class="orn b">✦</span>
+      <div class="kicker line">Các diễn viên của đêm nay</div>
+      <h2 class="line" style="margin-top:6px;font-size:23px">Gia đình mình</h2>
+      <div class="gframe line">
+        <i class="gc top"><svg viewBox="-20 -20 40 40"><use href="#roseG"/></svg></i>
+        <i class="gc tl"><svg viewBox="-20 -20 40 40"><use href="#roseG"/></svg></i><i class="gc tr"><svg viewBox="-20 -20 40 40"><use href="#roseG"/></svg></i>
+        <i class="gc bl"><svg viewBox="-20 -20 40 40"><use href="#roseG"/></svg></i><i class="gc br"><svg viewBox="-20 -20 40 40"><use href="#roseG"/></svg></i>
+        <div class="in"><div class="win cam full" id="cam"><div class="pan" id="pan"><img alt="Tranh minh họa cả nhà trên sân khấu" src="assets/img/anh-1.jpg"></div></div></div>
+      </div>
+      <div class="who line">
+        <div class="nm" id="whoNm">&nbsp;</div>
+        <div class="ds" id="whoDs">&nbsp;</div>
+      </div>
+      <div class="dots line" id="dots"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <button class="skip line" id="skipFam" type="button">Bỏ qua ›</button>
+      <button class="btn line later" data-next style="display:none">Tiếp tục</button>
+    </div>
+  </section>
+
+  <section class="scene" id="scene5">
+    <div class="card">
+      <span class="orn a">✦</span><span class="orn b">✦</span>
+      <div class="kicker line">Màn một</div>
+      <h2 class="line" style="margin-top:6px">Lời chúc</h2>
+      <div class="rule line">✦</div>
+      <div class="big line"><span class="nb">Chúc mừng mẹ</span> <span class="nb">ngày 20/10!</span></div>
+      <p class="line"><span class="nb">Xin chúc mẹ luôn vui vẻ,</span> <span class="nb">khỏe mạnh và gặt hái</span> <span class="nb">thật nhiều thành công</span> <span class="nb">trong cuộc sống.</span></p>
+      <p class="line"><span class="nb">Mong mẹ luôn tỏa sáng rực rỡ,</span> <span class="nb">bởi mẹ chính là động lực</span> <span class="nb">để chúng con không ngừng</span> <span class="nb">trưởng thành và ngày càng</span> <span class="nb">hoàn thiện bản thân.</span></p>
+      <p class="em line"><span class="nb">Mong mỗi ngày của mẹ</span> <span class="nb">đều ngập tràn tiếng cười,</span> <span class="nb">bình an và hạnh phúc</span> <span class="nb">bên gia đình.</span></p>
+      <button class="btn line" data-next>Tiếp tục</button>
+    </div>
+  </section>
+
+  <section class="scene" id="scene6">
+    <div class="card">
+      <span class="orn a">✦</span><span class="orn b">✦</span>
+      <div class="kicker line">Màn hai</div>
+      <h2 class="line" style="margin-top:6px">Lời cảm ơn</h2>
+      <div class="rule line">✦</div>
+      <p class="line"><span class="nb">Cảm ơn mẹ đã luôn yêu thương</span> <span class="nb">và hy sinh thầm lặng</span> <span class="nb">vì chúng con.</span></p>
+      <p class="line"><span class="nb">Cảm ơn mẹ vì những bữa cơm</span> <span class="nb">ấm áp, những lời dặn dò</span> <span class="nb">và vòng tay luôn rộng mở</span> <span class="nb">mỗi khi chúng con cần.</span></p>
+      <p class="line"><span class="nb">Dù chúng con có lớn đến đâu,</span> <span class="nb">mẹ vẫn là bến bình yên</span> <span class="nb">nhất của cuộc đời mình.</span></p>
+      <div class="small-script line" style="margin-top:4px"><span class="nb">Chúng con yêu mẹ</span> <span class="nb">rất nhiều!</span></div>
+      <button class="btn line" data-next>Tiếp tục</button>
+    </div>
+  </section>
+
+  <section class="scene" id="scene7" data-slides="1">
+    <div class="card">
+      <span class="orn a">✦</span><span class="orn b">✦</span>
+      <div class="kicker line">Màn cuối</div>
+      <div class="small-script line" style="margin-top:2px;font-size:40px">Khoảnh khắc</div>
+      <div class="small-script line" style="font-size:34px;margin-top:-4px">của gia đình mình</div>
+      <div class="slides line" id="slides"></div>
+      <div class="slnav line">
+        <button class="navb" id="slPrev" type="button" aria-label="Ảnh trước"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6l-6 6 6 6"/></svg></button>
+        <div class="dots" id="dots7" style="margin:0"></div>
+        <button class="navb" id="slNext" type="button" aria-label="Ảnh sau"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 6l6 6-6 6"/></svg></button>
+      </div>
+      <div class="big line later" id="finalMsg" style="margin-top:6px"><span class="nb">Mãi yêu mẹ,</span> <span class="nb">người phụ nữ</span> <span class="nb">tuyệt vời nhất!</span></div>
+      <button class="replay line later" id="replay">↻ Xem lại từ đầu</button>
+    </div>
+  </section>
+
+  <div class="petals" id="petals" aria-hidden="true"></div>
+
+  <div class="curtains" aria-hidden="true"><canvas id="cv"></canvas></div>
+
+  <div class="intro" id="intro">
+    <svg class="emblem" viewBox="0 0 100 100" aria-hidden="true"><use href="#sunSym"/></svg>
+    <div class="badge">Nhà hát gia đình trân trọng giới thiệu</div>
+    <div class="headline">Thiệp mừng 20/10</div>
+    <div class="sub">một đêm diễn dành tặng mẹ Hoa</div>
+    <button class="btn lg" id="openBtn">Mở màn</button>
+    <div class="hint">♪ Bật loa để nghe nhạc</div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <button class="mute off" id="mute" type="button" aria-label="Bật hoặc tắt nhạc nền" aria-pressed="false">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9.5v5h3.5L12 18.5v-13L7.5 9.5H4z" fill="currentColor" fill-opacity=".25"/><g class="w"><path d="M15.5 9a4.2 4.2 0 0 1 0 6"/><path d="M18 6.5a7.6 7.6 0 0 1 0 11"/></g><g class="x"><path d="M16 9.5l5 5M21 9.5l-5 5"/></g></svg>
+  </button>
+  <div class="pillar l" aria-hidden="true"></div><div class="pillar r" aria-hidden="true"></div>
+  <div class="pelmet" aria-hidden="true">
+    <svg viewBox="0 0 480 104" preserveAspectRatio="none">
+      <defs><linearGradient id="pg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c0303f"/><stop offset=".55" stop-color="#8c1425"/><stop offset="1" stop-color="#58091a"/></linearGradient></defs>
+      <path d="M0 0H480V46Q470 82 420 70Q372 58 338 80Q300 104 240 86Q180 104 142 80Q108 58 60 70Q10 82 0 46Z" fill="url(#pg)" stroke="#d9ae52" stroke-width="2.4" vector-effect="non-scaling-stroke"/>
+      <path d="M0 0H480V12H0Z" fill="#3a0610" opacity=".6"/>
+    </svg>
+    <span class="st" style="left:9%;top:14px;font-size:22px">★</span>
+    <span class="st" style="left:22%;top:50px;font-size:13px">★</span>
+    <span class="st" style="right:9%;top:12px;font-size:20px">★</span>
+    <span class="st" style="right:23%;top:52px;font-size:12px">★</span>
+    <span class="st" style="left:42%;top:8px;font-size:12px">✦</span>
+    <span class="st" style="left:57%;top:12px;font-size:16px">★</span>
+    <div class="t">Nhà hát những giấc mơ</div>
+  </div>
+</main>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <radialGradient id="sg" cx="40%" cy="35%"><stop offset="0" stop-color="#fff2b8"/><stop offset=".6" stop-color="#e0b552"/><stop offset="1" stop-color="#9a7227"/></radialGradient>
+    <linearGradient id="mg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fffaf0"/><stop offset=".6" stop-color="#e9ddc0"/><stop offset="1" stop-color="#b9a97f"/></linearGradient>
+    <g id="sunSym">
+      <g id="rays" fill="url(#sg)" stroke="#6b4a14" stroke-width=".8"></g>
+      <circle cx="50" cy="50" r="22" fill="url(#sg)" stroke="#6b4a14" stroke-width="1.2"/>
+      <path d="M41 46q3-3 6 0M53 46q3-3 6 0" stroke="#5a3a0e" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <path d="M50 48v9q-2 1-3 0" stroke="#5a3a0e" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+      <path d="M43 62q7 5 14 0" stroke="#5a3a0e" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    </g>
+    <g id="moonSym">
+      <path d="M62 8C38 10 20 30 20 54s18 42 42 44C44 90 36 72 36 54S44 18 62 8Z" fill="url(#mg)" stroke="#6b5a2e" stroke-width="1.2" transform="translate(6 -2)"/>
+      <path d="M30 50q4-3 7 0" stroke="#5a4a22" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <path d="M27 62q5 4 9 0" stroke="#5a4a22" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <path d="M78 22l2.4 6 6 2.4-6 2.4-2.4 6-2.4-6-6-2.4 6-2.4Z" fill="url(#sg)"/>
+      <path d="M72 62l1.6 4 4 1.6-4 1.6-1.6 4-1.6-4-4-1.6 4-1.6Z" fill="url(#sg)"/>
+    </g>
+    <g id="roseG"></g>
+  </defs>
+</svg>
+
+<script src="js/main.js"></script>
+</body>
+</html>
